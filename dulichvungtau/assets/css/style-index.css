@@ -1,0 +1,315 @@
+    /*Reset CSS*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: Nunito;
+        src: url(../font_gg/Nunito/static/Nunito-Medium.ttf);
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: Nunito;
+    }
+    /*  */
+    
+    #header {
+        height: 70px;
+        background-color: #112034;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    #header .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    
+    #header .mobile-menu-btn {
+        float: right;
+        cursor: pointer;
+        padding-right: 27px;
+        padding-left: 10px;
+    }
+    
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    #header .mobile-menu-btn:hover .menu-icon {
+        color: black;
+    }
+    
+    #header .menu-icon {
+        color: white;
+        font: size 20px;
+        line-height: 46.4px;
+        padding: 0 11px;
+    }
+    
+    #main {
+        background-color: black;
+    }
+    
+    #nav {
+        display: inline-block;
+    }
+    
+    #nav {
+        list-style-type: none;
+    }
+    
+    #nav li {
+        position: relative;
+    }
+    
+    #nav>li {
+        left: 100px;
+        display: inline-block;
+    }
+    
+    #nav>li>a {
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    #nav li a {
+        text-decoration: none;
+        line-height: 70px;
+        padding: 0 24px;
+        display: block;
+        border-radius: 25px;
+        ;
+    }
+    
+    #nav li:hover .subnav {
+        display: block;
+    }
+    
+    #nav .subnav li:hover a,
+    #nav>li:hover>a {
+        color: black;
+        background-color: #ccc;
+    }
+    /* CSS Slider */
+    
+    button.sli {
+        margin-top: 100px;
+    }
+    
+    img.d-block.w-100.img-slide {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 5rem;
+        text-shadow: 20px 20px 30px #000;
+    }
+    
+    .carousel-caption p {
+        font-size: 1.5rem;
+        color: white;
+        padding-bottom: 8%;
+        font-weight: bold;
+        padding-top: 3%;
+        text-shadow: 12px 12px 20px #000;
+    }
+    /* CSS Intro */
+    
+    #intro {
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+    
+    #intro .intro-text {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    #intro h1 {
+        color: white;
+        /* font-family: 'Times New Roman', Times, serif; */
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #intro p {
+        color: white;
+        /* font-family: 'Times New Roman', Times, serif; */
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    #intro img {
+        width: 100%;
+        height: 700px;
+        padding-bottom: 5%;
+    }
+    /* CSS  scenic*/
+    
+    #scenic {
+        background-color: black;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+    }
+    
+    #scenic h1 {
+        color: white;
+        /* font-family: 'Times New Roman', Times, serif; */
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #scenic .card {
+        margin-top: 50px;
+        border-radius: 25px;
+    }
+    
+    #scenic .card tr:first-child td {
+        width: 30%;
+    }
+    
+    #scenic .card img {
+        height: 100%;
+        border-radius: 25px;
+    }
+    
+    #scenic .card .carousel {
+        height: 100%;
+    }
+    
+    #scenic .title {
+        text-align: center;
+    }
+    
+    #scenic .title h2 {
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-weight: bold;
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+    #scenic table .col2 {
+        padding-left: 15px;
+        text-align: left;
+        padding-right: 10px;
+    }
+    
+    .col2 .tit {
+        margin-left: 0px;
+    }
+    
+    .button {
+        background-color: rgb(17, 151, 230);
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 15px;
+        margin-left: 10%;
+    }
+    /* End  scenic*/
+    
+    #footer {
+        padding-top: 20px;
+    }
+    
+    #footer .text-reset {
+        text-decoration: none;
+    }
+    
+    #footer .co {
+        margin-top: 20px;
+    }
+    /* 
+Responsive cho table */
+    
+    @media (min-width: 768px) and (max-device-width: 844px) {
+        #nav {
+            display: block;
+        }
+        #nav>li {
+            display: block;
+            left: 0;
+        }
+        #nav .subnav {
+            position: initial;
+            background-color: #333;
+        }
+        #nav .subnav a {
+            color: #fff;
+            padding: 6px 47px;
+        }
+        #nav>li:first-child {
+            display: inline-block;
+        }
+        #header {
+            overflow: hidden;
+        }
+        #slided {
+            overflow: hidden;
+            width: 100%;
+        }
+        #header .mobile-menu-btn {
+            display: block;
+        }
+        #intro img {
+            height: 350px;
+        }
+        #scenic .card tr:first-child td {
+            width: 100%;
+            display: block;
+        }
+    }
+    /* 
+Responsive cho mobile */
+    
+    @media (max-width: 768px) {
+        #nav {
+            display: block;
+        }
+        #nav>li {
+            display: block;
+            left: 0;
+        }
+        #nav>li:first-child {
+            display: inline-block;
+        }
+        #header {
+            overflow: hidden;
+        }
+        #slided {
+            overflow: hidden;
+            width: 100%;
+        }
+        #header .mobile-menu-btn {
+            display: block;
+        }
+        #intro img {
+            height: 350px;
+        }
+        #scenic .card tr:first-child td {
+            width: 100%;
+            display: block;
+        }
+    }

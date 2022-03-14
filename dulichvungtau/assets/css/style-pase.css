@@ -1,0 +1,108 @@
+    /*Reset CSS*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: Helvetica, Arial, sans-serif;
+        scroll-behavior: smooth;
+    }
+    /*  */
+    
+    #main {
+        background: black;
+    }
+    /* CSS Content */
+    
+    img.d-block.w-100 {
+        min-height: 550px;
+    }
+    
+    #content {
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: black;
+        color: white;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    #content h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #content .title {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #content .bigtext {
+        margin-left: 10%;
+        font-size: larger;
+    }
+    
+    #content .text {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    #content ol,
+    #content ol>li>h3 {
+        font-size: 30px;
+    }
+    
+    #content ol>li>p {
+        font-size: 24px;
+    }
+    
+    #content ol>li>ul>li {
+        font-size: 27px;
+    }
+    
+    #content ol>li>ul>li>p {
+        font-size: 20px;
+    }
+    
+    #content ol img {
+        width: 70%;
+        margin: 0 15%;
+        height: 600px;
+    }
+    
+    #content .text .note {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    /* Reponsite */
+    
+    @media (max-width: 768px) {
+        #content ol img {
+            height: 200px;
+        }
+        #content .text .note {
+            text-align: center;
+            font-size: 13px;
+        }
+        #content ol,
+        #content ol>li>h3 {
+            font-size: 20px;
+        }
+        #content ol>li>p {
+            font-size: 18px;
+        }
+        #content ol>li>ul>li {
+            font-size: 16px;
+        }
+        #content ol>li>ul>li>p {
+            font-size: 15px;
+        }
+        #content ol img {
+            height: 200px;
+        }
+    }
